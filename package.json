@@ -1,6 +1,6 @@
 {
-  "name": "nucleus",
-  "version": "1.0.0",
+  "name": "@leganux/nucleus",
+  "version": "1.0.1",
   "description": "Avoid boilerplate creating and sharing your own templates and rules with this tool",
   "main": "index.js",
   "repository": "https://github.com/leganux/Nucleus",
@@ -37,7 +37,7 @@
     "voca": "^1.4.1"
   },
   "bin": {
-    "nucleus": "./index.js"
+    "nucleusjs": "./index.js"
   },
   "devDependencies": {
     "eslint": "^8.56.0",

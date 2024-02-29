@@ -131,7 +131,7 @@ module.exports = async function ({name}) {
             let rpl_comma = questionAsync('Give me the parameters for function, comma separated (Example: name,description,field1): ')
             inner.params = rpl_comma?.split(',') || []
 
-            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn ${ExResponse} \n }, `
+            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn JSON.stringify( ${ExResponse}) \n }, `
         }
 
         if (inner.type.toLowerCase() == 'v') {
@@ -244,7 +244,7 @@ module.exports = async function ({name}) {
             let rpl_comma = questionAsync('Give me the parameters for function, comma separated (Example: name,description,field1): ')
             inner.params = rpl_comma?.split(',') || []
 
-            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn ${ExResponse} \n }, `
+            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn JSON.stringify (${ExResponse}) \n }, `
         }
 
         if (inner.type.toLowerCase() == 'v') {

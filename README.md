@@ -9,31 +9,31 @@ Avoid bolerplate creating and sharing your own templates and rules with this too
 **Install**
 
 ```
-npm install nucleus -g
+npm install @leganux/nucleus -g
 ```
 
 **Get started**
 
 ```
-nucleus configure
+nucleusjs configure
 ```
 
 **List default templates**
 
 ```
-nucleus list
+nucleusjs list
 ```
 
 **Create a new template**
 
 ```
-nucleus make
+nucleusjs make
 ```
 
 **Execute and use a template to your projects**
 
 ```
-nucleus execute
+nucleusjs execute
 ```
 
 *Coming soon*
@@ -41,19 +41,19 @@ nucleus execute
 To share a template in our website as public template
 
 ```
-nucleus publish
+nucleusjs publish
 ```
 
 To use a template from website of the community
 
 ```
-nucleus publish
+nucleusjs publish
 ```
 
 ## Configure your first example project
 
 ```
-nucleus execute -n nucleus_FULL_Modules_SQL
+nucleusjs execute -n nucleus_FULL_Modules_SQL
 ```
 
 Follow the instructions, and then
