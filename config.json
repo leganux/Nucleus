@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0",
+    "template_folder": "/data",
+    "credentials": {
+        "user": "default",
+        "password": "pk_default"
+    },
+    "match": {
+        "variable": "{{_X_}}",
+        "function": "{$_X_$}",
+        "files": "___X___"
+    },
+    "support_files": [
+        "js",
+        "json",
+        "html",
+        "pug",
+        "ts",
+        "tsx",
+        "htm",
+        "xml",
+        "txt",
+        "py",
+        "php",
+        "vue",
+        "vuex",
+        "ng",
+        "md",
+        "yaml",
+        "lua"
+    ]
+}
