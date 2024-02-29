@@ -1,8 +1,9 @@
 {
   "name": "nucleus",
   "version": "1.0.0",
-  "description": "Avoid bolerplate creating and sharing your own templates and rules with this tool",
+  "description": "Avoid boilerplate creating and sharing your own templates and rules with this tool",
   "main": "index.js",
+  "repository": "https://github.com/leganux/Nucleus",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
