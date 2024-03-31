@@ -9,6 +9,7 @@ const publish = require('./actions/publish')
 const use = require('./actions/use')
 const list = require('./actions/list')
 const ai = require('./actions/ai')
+const json = require('./actions/json')
 
 
 program
@@ -54,6 +55,12 @@ program
     .command('ai')
     .description('Executes AI generation project Wizard')
     .action(ai)
+
+program
+    .command('json')
+    .option('-p, --path_ <path_...>', 'The url path for json to be processed')
+    .description('Executes a template with params and info preconfigured in a JSON')
+    .action(json)
 
 
 program.parse()
