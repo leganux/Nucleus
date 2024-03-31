@@ -43,10 +43,10 @@ module.exports = function () {
             innerConfig = JSON.parse(innerConfig)
             table.push({
                 name: item,
-                description: innerConfig.description || null,
-                version: innerConfig.version || null,
-                overwrite: innerConfig.overwrite || false,
-                cmd: innerConfig?.cmd.join(', ') || false,
+                description: innerConfig?.description || null,
+                version: innerConfig?.version || null,
+                overwrite: innerConfig?.overwrite || false,
+                cmd: innerConfig?.cmd ? innerConfig?.cmd.join(', ') : false,
             })
         }
     }

@@ -8,6 +8,7 @@ const make = require('./actions/make')
 const publish = require('./actions/publish')
 const use = require('./actions/use')
 const list = require('./actions/list')
+const ai = require('./actions/ai')
 
 
 program
@@ -15,8 +16,10 @@ program
     .description('Create or update the config file for nucleus engine')
     .option('-d, --dir <dir...>', 'Default directory to store local templates')
     .option('-l, --login <login...>', 'Verify and store credentials to ')
+    .option('-ai, --openai <openai...>', 'Save the open AI token in config JSON for create function')
     .option('-f, --files <files...>', 'Adds support files to config. Default  "js","html","pug","ts","tsx","htm","xml","txt","py","php","vue","vuex","ng","md","yaml","lua"')
     .action(configure)
+
 
 program
     .command('list')
@@ -48,9 +51,9 @@ program
     .action(use)
 
 program
-    .command('list')
-    .description('List the available templates, and its description')
-    .action(use)
+    .command('ai')
+    .description('Executes AI generation project Wizard')
+    .action(ai)
 
 
 program.parse()

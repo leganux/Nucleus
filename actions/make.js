@@ -23,13 +23,15 @@ function makeid(length) {
     return result;
 }
 
-let ExResponse = {
+let ExResponse = `
+{
     success: true,
     message: "Function executed correctly",
     template: "/* the formatted string of template to replace match */"
 }
+`
 
-ExResponse = JSON.stringify(ExResponse)
+
 module.exports = async function ({name}) {
     l('Welcome we gonna make another template... \t')
 
@@ -69,6 +71,7 @@ module.exports = async function ({name}) {
 
     delete configJson.template_folder
     delete configJson.credentials
+    delete configJson.openai_key
     configJson.name = name
 
     description = questionAsync('Give me the template description: ')
@@ -131,7 +134,7 @@ module.exports = async function ({name}) {
             let rpl_comma = questionAsync('Give me the parameters for function, comma separated (Example: name,description,field1): ')
             inner.params = rpl_comma?.split(',') || []
 
-            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn JSON.stringify( ${ExResponse}) \n }, `
+            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \n return ${ExResponse} \n }, `
         }
 
         if (inner.type.toLowerCase() == 'v') {
@@ -244,7 +247,7 @@ module.exports = async function ({name}) {
             let rpl_comma = questionAsync('Give me the parameters for function, comma separated (Example: name,description,field1): ')
             inner.params = rpl_comma?.split(',') || []
 
-            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn JSON.stringify (${ExResponse}) \n }, `
+            function_list = function_list + ` ${inner.name} : async function ({${inner?.params?.join(',')}}){ \n\n//** Important the return must be an object with info and template \nreturn ${ExResponse} \n }, `
         }
 
         if (inner.type.toLowerCase() == 'v') {

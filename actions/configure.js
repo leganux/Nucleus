@@ -9,6 +9,9 @@ const os = require("os");
 const {promisify} = require("util");
 const listProjects = require("./common/listProjects");
 
+const readFileAsync = promisify(fs.readFile);
+const writeFileAsync = promisify(fs.writeFile);
+
 const execAsync = promisify(exec);
 
 const list_of_starter_templates = [
@@ -40,7 +43,7 @@ function getDirectories(dirPath) {
     return directories;
 }
 
-module.exports = async function ({dir, login, files}) {
+module.exports = async function ({dir, login, files, openai}) {
     l('Welcome now we gonna configure nucleus engine... \t')
 
     const userHomeDir = os.homedir();
@@ -54,6 +57,28 @@ module.exports = async function ({dir, login, files}) {
     if (!fs.existsSync(configFolder)) {
         await makeDir(configFolder)
     }
+
+    if (openai) {
+        try {
+            console.log(openai)
+            if (!fs.existsSync(configFile)) {
+                throw  new Error(' Config file  doesn`t not exists. Please execute config first')
+            }
+            let dataFile = await readFileAsync(configFile, 'utf8')
+            dataFile = JSON.parse(dataFile)
+            dataFile.openai_key = openai[0]
+            await writeFileAsync(configFile, JSON.stringify(dataFile, null, '\t'), 'utf8');
+            l('Correctly Saved')
+
+        } catch (e) {
+            console.error(e)
+            throw  e
+        }
+
+
+        return
+    }
+
 
     let configJson = require('./../config.json')
     let packageJson_source = require('./../package_example.json')
@@ -168,11 +193,6 @@ module.exports = async function ({dir, login, files}) {
 
     fs.writeFileSync(path.resolve(configFile), JSON.stringify(configJson, null, '\t'))
     fs.writeFileSync(path.resolve(packageJson), JSON.stringify(packageJson_source, null, '\t'))
-
-
-
-
-
 
 
     let table = listProjects()
