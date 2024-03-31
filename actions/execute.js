@@ -375,7 +375,7 @@ module.exports = async function ({name}) {
 
     // appenddicers functions
     for (let [key, val] of Object.entries(appendixObject?.f)) {
-        console.log('_ _ _ _ _ _val match ', val.dir)
+
         let newFullDir = path.join(destination, val.dir)
         if (!fs.existsSync(newFullDir)) {
             l('SKIP :: ' + newFullDir + ' does not exist')
@@ -384,7 +384,7 @@ module.exports = async function ({name}) {
         let fileContent = fs.readFileSync(newFullDir, 'utf-8');
         if (fileContent.includes(val.match)) {
             if (val.global) {
-                console.log('AAAAA')
+
 
                 if (val.position == 'before') {
                     fileContent = fileContent.replaceAll(val.match, val.match + '\n' + val.value)
@@ -394,7 +394,7 @@ module.exports = async function ({name}) {
 
 
             } else {
-                console.log('BBBBB')
+
 
                 let ex_func = questionAsync('>You wanna execute function ' + key + ' to add values y/(n) :  ')
                 let arrData = []
@@ -432,7 +432,7 @@ module.exports = async function ({name}) {
 
     // appenddicers varaibles
     for (let [key, val] of Object.entries(appendixObject?.v)) {
-        console.log('_ _ _ _ _ _val match ', val.dir)
+
 
         let newFullDir = path.join(destination, val.dir)
         if (!fs.existsSync(newFullDir)) {
