@@ -153,8 +153,8 @@ module.exports = async function ({name}) {
     let conf = fs.readFileSync(pathTemplateConfig, {encoding: 'utf8', flag: 'r'})
 
     conf = JSON.parse(conf)
-    let pathFunctions = path.join(nucleussPath, name, conf.functions_file)
-    let exec_functions = require(pathFunctions)
+
+
     let source = path.join(nucleussPath, name, 'structure')
     let destination = actualPath
     let supportedFiles = conf.support_files
@@ -163,6 +163,8 @@ module.exports = async function ({name}) {
 
 
     let template_dir = path.join(nucleussPath, name)
+
+    l('** ** *** install dependencies' + nucleussPath + name)
 
     try {
         process.chdir(path.join(nucleussPath, name));
