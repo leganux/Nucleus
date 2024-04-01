@@ -42,6 +42,12 @@ nucleusjs execute
 nucleusjs json -p /path/to/jsonfile.runner.json
 ```
 
+**Create a project automatically using IA with OpenAI**
+
+```
+nucleusjs ai
+```
+
 ***Example of JSON RUNNER for library***
 
 ```JSON 

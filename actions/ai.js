@@ -145,7 +145,7 @@ module.exports = async function () {
 
         let descriptionInitial = []
         let askAgain = true
-        l('\n\n\n\n')
+        l('\n\n\n\n 🤖')
         let description = questionAsync('Give me a detailed description about your APP: ')
         descriptionInitial.push(description)
 
@@ -283,14 +283,17 @@ module.exports = async function () {
                 },
             ])
 
+            console.log('Response from OpenAI == ', answer.data)
             let response = JSON.parse(answer.data)
 
             if (response.isComplete) {
                 askAgain = false
                 JSON_f = response
+                l('[ 🤖💬 ] > Let me generate your  Application')
 
             } else {
                 askAgain = true
+                l('\n[ 🤖💬 ] > I´m Sorry i need to complete information.')
                 l('\n\n Need more information, be detailed please.')
                 l('******************************************* \n\n')
                 l(response.response_to_user)
@@ -361,15 +364,19 @@ module.exports = async function () {
 
         console.log('\n\n > Lets start to execute ' + runnerJson.name)
         console.log(' > ' + runnerJson.description + ' < ')
-        l(' \n\n >  full runner json' + JSON.stringify(runnerJson, null, '\n'))
+        l(' \n\n > Full runner json' + JSON.stringify(runnerJson, null, '\n'))
 
+        l('[ 🤖💬 ] > Im gonna save runner file for future modifications ')
         fs.writeFileSync(path.join(actualPath, runnerJson.name + '.runner.json'), JSON.stringify(runnerJson), 'utf-8');
 
         for (let xtem of runnerJson.steps) {
 
+
             l('********************************')
             l('**** Step: ' + xtem.name + '****')
             l('********************************')
+
+            sleep(1000)
 
             l(xtem.description)
 
@@ -655,6 +662,7 @@ module.exports = async function () {
             }
         }
 
+        l('[ 🤖💬 ] > Enjoy your new Application. Nucleus Wizard by leganux Powered OpenAI ')
 
     } catch (e) {
         console.error(e)
