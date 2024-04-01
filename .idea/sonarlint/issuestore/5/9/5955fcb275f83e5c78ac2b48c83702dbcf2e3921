@@ -1,0 +1,20 @@
+
+\javascript:S14818"4Remove the declaration of the unused 'key' variable.(Î¨Ôüÿÿÿÿ8‡ÓÂ´é1
+Yjavascript:S18548"1Remove this useless assignment to variable "key".(Î¨Ôüÿÿÿÿ8‡ÓÂ´é1
+Vjavascript:S1481@"4Remove the declaration of the unused 'key' variable.(Î®°r8‡ÓÂ´é1
+Sjavascript:S1854@"1Remove this useless assignment to variable "key".(Î®°r8‡ÓÂ´é1
+}javascript:S3776K"URefactor this function to reduce its Cognitive Complexity from 179 to the 15 allowed.(£‚ŸŒÿÿÿÿÿ8‡ÓÂ´é1
+[javascript:S1481’"7Remove the declaration of the unused 'stderr' variable.(àüÆö8‡ÓÂ´é1
+Xjavascript:S1854’"4Remove this useless assignment to variable "stderr".(àüÆö8‡ÓÂ´é1
+[javascript:S1481š"7Remove the declaration of the unused 'stderr' variable.(Œ¢‹8ˆÓÂ´é1
+Xjavascript:S1854š"4Remove this useless assignment to variable "stderr".(Œ¢‹8ˆÓÂ´é1
+–javascript:S6523¶"mUnsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError.(Å‘ÿçıÿÿÿÿ8ˆÓÂ´é1
+javascript:S6582»"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8ˆÓÂ´é1
+–javascript:S6523å"mUnsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError.(»Îÿüúÿÿÿÿ8ˆÓÂ´é1
+javascript:S6582ì"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8ˆÓÂ´é1
+Xjavascript:S1481›"4Remove the declaration of the unused 'key' variable.(¤û»8ˆÓÂ´é1
+Ujavascript:S1854›"1Remove this useless assignment to variable "key".(¤û»8ˆÓÂ´é1
+Wjavascript:S1481Ñ"4Remove the declaration of the unused 'key' variable.(…³¤m8ˆÓÂ´é1
+Tjavascript:S1854Ñ"1Remove this useless assignment to variable "key".(…³¤m8ˆÓÂ´é1
+Xjavascript:S1481å"4Remove the declaration of the unused 'key' variable.(ş›…8ˆÓÂ´é1
+Ujavascript:S1854å"1Remove this useless assignment to variable "key".(ş›…8ˆÓÂ´é1

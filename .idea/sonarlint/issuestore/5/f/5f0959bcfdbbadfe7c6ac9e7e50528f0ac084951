@@ -1,14 +1,12 @@
 
-|javascript:S37766"TRefactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.(î”ı‰ùÿÿÿÿ8Çó­–é1
-~javascript:S6582L"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8Çó­–é1
-}javascript:S3776k"URefactor this function to reduce its Cognitive Complexity from 203 to the 15 allowed.(Ûš·çúÿÿÿÿ8÷’²–é1
-cjavascript:S1481"?Remove the declaration of the unused 'exec_functions' variable.(ÉôŸ8Çó­–é1
-`javascript:S1854"<Remove this useless assignment to variable "exec_functions".(ÉôŸ8Çó­–é1
-[javascript:S1481©"7Remove the declaration of the unused 'stderr' variable.(àüÆö8Çó­–é1
-Xjavascript:S1854©"4Remove this useless assignment to variable "stderr".(àüÆö8Çó­–é1
-[javascript:S1481±"7Remove the declaration of the unused 'stderr' variable.(Œ¢‹8Çó­–é1
-Xjavascript:S1854±"4Remove this useless assignment to variable "stderr".(Œ¢‹8Çó­–é1
-javascript:S6582Ø"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8Çó­–é1
-javascript:S6582"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8Çó­–é1
-bjavascript:S4030"?Either use this collection's contents or remove the collection.(·ÒĞF8Çó­–é1
-javascript:S6582"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8÷’²–é1
+|javascript:S37766"TRefactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.(î”ı‰ùÿÿÿÿ8÷Õæ¯é1
+~javascript:S6582L"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8÷Õæ¯é1
+}javascript:S3776k"URefactor this function to reduce its Cognitive Complexity from 203 to the 15 allowed.(Ûš·çúÿÿÿÿ8øÕæ¯é1
+[javascript:S1481«"7Remove the declaration of the unused 'stderr' variable.(àüÆö8Ù–ç¯é1
+Xjavascript:S1854«"4Remove this useless assignment to variable "stderr".(àüÆö8Ù–ç¯é1
+[javascript:S1481³"7Remove the declaration of the unused 'stderr' variable.(Œ¢‹8Ù–ç¯é1
+Xjavascript:S1854³"4Remove this useless assignment to variable "stderr".(Œ¢‹8Ú–ç¯é1
+javascript:S6582Ú"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8Ú–ç¯é1
+javascript:S6582’"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8Ú–ç¯é1
+bjavascript:S4030’"?Either use this collection's contents or remove the collection.(·ÒĞF8Ú–ç¯é1
+javascript:S6582 "[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8Ú–ç¯é1

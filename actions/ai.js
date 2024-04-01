@@ -369,9 +369,16 @@ module.exports = async function () {
         l('[ 🤖💬 ] > Im gonna save runner file for future modifications ')
         fs.writeFileSync(path.join(actualPath, runnerJson.name + '.runner.json'), JSON.stringify(runnerJson), 'utf-8');
 
+        l('\n\n [ 🤖💬 ] > The runner JSON was created you want to execute')
+
+        let y_n = questionAsync('Can i execute the runner now (y)/n: ')
+        if (y_n.toLowerCase().trim() == 'n') {
+            l('\n\n [ 🤖💬 ] > Process has been finished. Thank U! ♥️ ')
+            l('\n\n [ 🤖💬 ] > Execute nucleusjs json -p ' + path.join(actualPath, runnerJson.name + '.runner.json') + ' To deploy project based on the template')
+            return
+        }
+
         for (let xtem of runnerJson.steps) {
-
-
             l('********************************')
             l('**** Step: ' + xtem.name + '****')
             l('********************************')
@@ -542,7 +549,7 @@ module.exports = async function () {
             let three = getThree(source)
 
 
-            l('Starting  proccess ' + three.length + ' files..')
+            l('Starting  Process ' + three.length + ' files..')
             await sleep(1000)
 
             for (let item of three) {
@@ -648,7 +655,7 @@ module.exports = async function () {
                 fileContent = await replacers(replacerObject, fileContent, template_dir)
                 fs.writeFileSync(newFullDir, fileContent, 'utf-8');
             }
-            l('End  proccess ' + three.length + ' files processed..')
+            l('End  Process ' + three.length + ' files processed..')
             process.chdir(destination);
             for (let item of cmd) {
                 try {
@@ -663,6 +670,8 @@ module.exports = async function () {
         }
 
         l('[ 🤖💬 ] > Enjoy your new Application. Nucleus Wizard by leganux Powered OpenAI ')
+        l('\n\n [ 🤖💬 ] > Process has been finished. Thank U! ♥️ ')
+        l('\n\n [ 🤖💬 ] > Finally run $ npm start to run the project')
 
     } catch (e) {
         console.error(e)

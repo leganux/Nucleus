@@ -1,0 +1,29 @@
+
+\javascript:S1481<"4Remove the declaration of the unused 'key' variable.(Î¨Ôüÿÿÿÿ8Èíç¶é1
+Yjavascript:S1854<"1Remove this useless assignment to variable "key".(Î¨Ôüÿÿÿÿ8Éíç¶é1
+Vjavascript:S1481D"4Remove the declaration of the unused 'key' variable.(Î®°r8Éíç¶é1
+Sjavascript:S1854D"1Remove this useless assignment to variable "key".(Î®°r8Éíç¶é1
+wjavascript:S3776P"URefactor this function to reduce its Cognitive Complexity from 190 to the 15 allowed.(·‰¼z8‹¿ó¶é1
+\javascript:S1481Y"9Remove the declaration of the unused 'fullpath' variable.(±èã8×šá¶é1
+Yjavascript:S1854Y"6Remove this useless assignment to variable "fullpath".(±èã8Øšá¶é1
+djavascript:S1481["<Remove the declaration of the unused 'packageJson' variable.(ýˆ¤ˆúÿÿÿÿ8Øšá¶é1
+ajavascript:S1854["9Remove this useless assignment to variable "packageJson".(ýˆ¤ˆúÿÿÿÿ8Øšá¶é1
+_javascript:S1481]"=Remove the declaration of the unused 'configFolder' variable.(¤ãÃ+8Øšá¶é1
+\javascript:S1854]":Remove this useless assignment to variable "configFolder".(¤ãÃ+8Øšá¶é1
+Zjavascript:S1854n"2Remove this useless assignment to variable "SQL_".(õÂòƒüÿÿÿÿ8Øšá¶é1
+Ujavascript:S1854v"2Remove this useless assignment to variable "API_".(˜Ú±8Øšá¶é1
+^javascript:S1854}"6Remove this useless assignment to variable "MODULES_".(Ä§ºßúÿÿÿÿ8Øšá¶é1
+[javascript:S1481£"7Remove the declaration of the unused 'stderr' variable.(àüÆö8¡×À¿é1
+Xjavascript:S1854£"4Remove this useless assignment to variable "stderr".(àüÆö8¡×À¿é1
+[javascript:S1481«"7Remove the declaration of the unused 'stderr' variable.(Œ¢‹8¡×À¿é1
+Xjavascript:S1854«"4Remove this useless assignment to variable "stderr".(Œ¢‹8¡×À¿é1
+–javascript:S6523Ç"mUnsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError.(Å‘ÿçýÿÿÿÿ8¡×À¿é1
+javascript:S6582Ì"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8¡×À¿é1
+–javascript:S6523ö"mUnsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError.(»Îÿüúÿÿÿÿ8¡×À¿é1
+javascript:S6582ý"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(Â‚†Ã8¢×À¿é1
+Xjavascript:S1481¬"4Remove the declaration of the unused 'key' variable.(¤û»8¢×À¿é1
+Ujavascript:S1854¬"1Remove this useless assignment to variable "key".(¤û»8¢×À¿é1
+Wjavascript:S1481â"4Remove the declaration of the unused 'key' variable.(…³¤m8¢×À¿é1
+Tjavascript:S1854â"1Remove this useless assignment to variable "key".(…³¤m8¢×À¿é1
+Xjavascript:S1481ö"4Remove the declaration of the unused 'key' variable.(þ›…ž8¢×À¿é1
+Ujavascript:S1854ö"1Remove this useless assignment to variable "key".(þ›…ž8¢×À¿é1
