@@ -1,6 +1,6 @@
 {
   "name": "@leganux/nucleus",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Avoid boilerplate creating and sharing your own templates and rules with this tool",
   "main": "index.js",
   "repository": "https://github.com/leganux/Nucleus",
